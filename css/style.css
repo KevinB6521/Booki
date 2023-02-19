@@ -94,3 +94,22 @@ i {
     margin-right: 10px;
     color: #0065FC;
 }
+
+.info-icon {
+    margin: 5px 10px;
+}
+
+.text-info {
+    width: 500px;
+}
+
+.button-info {
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
