@@ -28,3 +28,17 @@ ul {
     list-style-type: none;
     gap: 50px;
 }
+
+h1 {
+    width: 600px;
+    height: 26px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+h2 {
+    width: 296px;
+    height: 19px;
+    font-weight: 400;
+    font-size: 16px;
+}
