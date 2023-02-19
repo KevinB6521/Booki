@@ -8,7 +8,7 @@ nav {
    justify-content: space-between;
 }
 
-img {
+.logo {
     width: 61.09px;
     height: 19px;
 }
@@ -95,7 +95,8 @@ i {
     color: #0065FC;
 }
 
-.info-icon {
+.info-icon,
+.location-icon {
     margin: 5px 10px;
 }
 
@@ -112,4 +113,107 @@ i {
 .info {
     display: flex;
     align-items: center;
+}
+
+.main-part {
+    display: flex;
+    gap: 40px;
+}
+
+.hébergements {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 40px 42px 40px 42px;
+}
+
+.populaires {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 40%;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 40px 42px 40px 42px;
+}
+
+.populaires-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.cards-h {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.cards-p {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.card-h {
+    background-color: white;
+    border-radius: 15px;
+    height: 199px;
+    padding-top: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+}
+
+.card-p {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 15px;
+    width: 343px;
+    height: 144px;
+    padding-top: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+}
+
+.card-h-image {
+    width: 246px;
+    height: 124px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card-p-image {
+    width: 137px;
+    height: 144px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.card-h-text {
+    font-size: 10px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.star {
+    margin-right: 2px;
+}
+
+h4 {
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 0px;
 }
