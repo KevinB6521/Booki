@@ -18,7 +18,7 @@ a {
     color: black;
 }
 
-a:hover {
+.header-links:hover {
     color:#0065FC;
     border-top: 2px solid #0065FC;
 }
@@ -231,4 +231,62 @@ p {
 
 .p-stars-2 {
     margin-top: 77px;
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.cards-a {
+    display: grid;
+    grid-gap: 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.card-a {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 302px;
+    height: 444.51px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-a-image {
+    height: 389px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.a-description {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #F2F2F2;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.footer-element {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    gap: 10px;
+    font-size: 16px;
 }
