@@ -3,6 +3,8 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Header */
+
 nav {
    display: flex;
    justify-content: space-between;
@@ -18,10 +20,75 @@ a {
     color: black;
 }
 
-.header-links:hover {
+.header-link:hover {
     color:#0065FC;
     border-top: 2px solid #0065FC;
 }
+
+form {
+    width: 75%;
+    display: flex;
+    border-collapse: collapse;
+    padding-top: 20px;
+}
+
+input {
+    border: 1px solid #F2F2F2;
+}
+
+.button-icon {
+    background-color:#F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    padding: 15px 16px;
+}
+
+.location-icon {
+    color: black;
+}
+
+.info-icon,
+.location-icon {
+    margin: 5px 10px;
+}
+
+.search {
+    color: white;
+    background-color: #0065FC;
+    padding: 15px 16px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    font-weight: 700;
+}
+
+::placeholder {
+    color: black;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.filters {
+    display: flex;
+    margin-top: 20px;
+    align-items: baseline;
+}
+
+.text-info {
+    width: 500px;
+}
+
+.button-info {
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+/* Main content */
 
 ul {
     display: flex;
@@ -43,45 +110,6 @@ h2 {
     font-size: 16px;
 }
 
-form {
-    width: 75%;
-    display: flex;
-    border-collapse: collapse;
-    padding-top: 20px;
-}
-
-input {
-    border: 1px solid #F2F2F2;
-}
-
-.icon {
-    background-color:#F2F2F2;
-    border: 1px solid #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-    padding: 15px 16px;
-}
-
-.search {
-    color: white;
-    background-color: #0065FC;
-    padding: 15px 16px;
-    border: none;
-    border-radius: 0px 15px 15px 0px;
-    font-weight: 700;
-}
-
-::placeholder {
-    color: black;
-    font-weight: 700;
-    padding-left: 10px;
-}
-
-.filtres {
-    display: flex;
-    margin-top: 20px;
-    align-items: baseline;
-}
-
 button {
     border: 2px solid #c1c0c0;
     border-radius: 20px;
@@ -93,26 +121,6 @@ button {
 i {
     margin-right: 10px;
     color: #0065FC;
-}
-
-.info-icon,
-.location-icon {
-    margin: 5px 10px;
-}
-
-.text-info {
-    width: 500px;
-}
-
-.button-info {
-    border-radius: 50%;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-.info {
-    display: flex;
-    align-items: center;
 }
 
 .main-part {
@@ -128,6 +136,34 @@ i {
     margin-top: 20px;
     border-radius: 15px;
     padding: 40px 42px 40px 42px;
+}
+
+.cards-h {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.card-h {
+    background-color: white;
+    border-radius: 15px;
+    height: 199px;
+    padding-top: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+}
+
+.card-h-image {
+    width: 246px;
+    height: 124px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card-h-text {
+    font-size: 10px;
+    text-align: left;
+    padding-left: 16px;
 }
 
 .populaires {
@@ -147,28 +183,12 @@ i {
     align-items: baseline;
 }
 
-.cards-h {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 20px;
-}
-
 .cards-p {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin-bottom: 20px;
-}
-
-.card-h {
-    background-color: white;
-    border-radius: 15px;
-    height: 199px;
-    padding-top: 8px;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
 }
 
 .card-p {
@@ -183,22 +203,10 @@ i {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
 }
 
-.card-h-image {
-    width: 246px;
-    height: 124px;
-    border-radius: 15px 15px 0px 0px;
-}
-
 .card-p-image {
     width: 137px;
     height: 144px;
     border-radius: 15px 0px 0px 15px;
-}
-
-.card-h-text {
-    font-size: 10px;
-    text-align: left;
-    padding-left: 16px;
 }
 
 .card-p-text {
@@ -233,6 +241,8 @@ p {
     margin-top: 77px;
 }
 
+/* Secondary section */
+
 section {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -260,10 +270,12 @@ section {
     border-radius: 15px 15px 0px 0px;
 }
 
-.a-description {
+.card-a-title {
     margin-top: 20px;
     margin-left: 20px;
 }
+
+/* Footer */
 
 footer {
     display: flex;
@@ -273,14 +285,14 @@ footer {
     padding-bottom: 30px;
 }
 
+h5 {
+    font-size: 18px;
+}
+
 .footer-element {
     display: flex;
     flex-direction: column;
     width: 200px;
-}
-
-h5 {
-    font-size: 18px;
 }
 
 .footer-list {
