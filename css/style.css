@@ -1,9 +1,14 @@
 body {
     margin: 30px 50px 0px 50px;
     font-family: 'Raleway', sans-serif;
+    max-width: 1400px;
 }
 
 /* Header */
+
+header {
+    width: auto;
+}
 
 nav {
    display: flex;
@@ -20,9 +25,23 @@ a {
     color: black;
 }
 
+.header-list {
+    margin-top: -30px;
+}
+
+.header-link {
+    border-top: 2px solid transparent;
+    padding-top: 44px;
+
+}
+
 .header-link:hover {
-    color:#0065FC;
     border-top: 2px solid #0065FC;
+    padding-top: 44px;
+}
+
+.filter-button:hover {
+    background-color: #DEEBFF;
 }
 
 form {
@@ -35,6 +54,11 @@ form {
 input {
     border: 1px solid #F2F2F2;
     width: 236px;
+}
+
+label {
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .button-icon {
@@ -51,21 +75,30 @@ input {
 
 .location-icon {
     color: black;
+    margin: 15px;
 }
 
-.info-icon,
-.location-icon {
+.info-icon {
     margin: 5px 10px;
 }
 
 .search {
     color: white;
     background-color: #0065FC;
-    width: 132px;
+    width: fit-content;
     padding: 15px 16px;
     border: none;
     border-radius: 0px 15px 15px 0px;
     font-weight: 700;
+}
+
+.search-text {
+    margin: 0px;
+}
+
+.search-icon {
+    display: none;
+    width: 0px;
 }
 
 ::placeholder {
@@ -104,14 +137,15 @@ ul {
 }
 
 h1 {
-    width: 600px;
+    width: 100%;
     height: 26px;
     font-weight: 700;
     font-size: 22px;
+    white-space: nowrap;
 }
 
 h2 {
-    width: 296px;
+    width: 100%;
     height: 19px;
     font-weight: 400;
     font-size: 16px;
@@ -123,6 +157,7 @@ button {
     background-color: white;
     padding: 15px 16px;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 i {
@@ -139,7 +174,7 @@ i {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    width: 60%;
+    width: 70%;
     margin-top: 20px;
     border-radius: 15px;
     padding: 40px 42px 40px 42px;
@@ -147,14 +182,17 @@ i {
 
 .cards-h {
     display: grid;
+    width: 100%;
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
 }
 
 .card-h {
+    position: relative;
     background-color: white;
     border-radius: 15px;
+    width: 100%;
     height: 199px;
     padding: 8px;
     text-align: center;
@@ -162,22 +200,32 @@ i {
 }
 
 .card-h-image {
-    width: 246px;
-    height: 124px;
+    width: 100%;
+    height: 50%;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 
 .card-h-text {
     font-size: 10px;
     text-align: left;
-    padding-left: 16px;
+    line-height: 5px;
+    padding-left: 8px;
+    padding-top: 8px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.card-h-stars {
+    position: absolute;
+    bottom: 8px;
 }
 
 .populaires {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    width: 40%;
+    width: 30%;
     margin-top: 20px;
     border-radius: 15px;
     padding: 40px 42px 40px 42px;
@@ -193,64 +241,72 @@ i {
 .cards-p {
     display: grid;
     grid-gap: 30px;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin-bottom: 20px;
+    aspect-ratio: 4/1;
 }
 
 .card-p {
+    position: relative;
     display: flex;
     flex-direction: row;
     background-color: white;
     border-radius: 15px;
-    width: 343px;
-    height: 144px;
+    width: 100%;
+    height: fit-content;
     padding: 8px;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .card-p-image {
-    width: 137px;
-    height: 144px;
+    aspect-ratio: 3/2;
+    max-width: 50%;
+    max-height: 100%;
     border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
 }
 
 .card-p-text {
     font-size: 10px;
     text-align: left;
-    padding-left: 10px;
-    padding-top: 15px;
+    padding: 8px 8px 8px 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.card-p-stars {
+    position: absolute;
+    bottom: 8px;
 }
 
 .star {
     margin-right: 2px;
 }
 
+
 h4 {
     margin-top: 0px;
     font-size: 16px;
     font-weight: 700;
-    line-height: 18.78px;
     margin-bottom: 0px;
+    line-height: 15px;
+}
+
+.long-h4 {
+    white-space: pre-wrap;
 }
 
 p {
     font-size: 14px;
-    line-height: 0px;
-}
-
-.p-stars {
-    margin-top: 60px;
-}
-
-.p-stars-2 {
-    margin-top: 77px;
+    line-height: 20px;
 }
 
 /* Secondary section */
 
-section {
+.activités {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
@@ -258,23 +314,26 @@ section {
 
 .cards-a {
     display: grid;
-    grid-gap: 70px;
+    grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 20px;
 }
 
 .card-a {
+    position: relative;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    width: 302px;
+    width: 100%;
     height: 444.51px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .card-a-image {
+    width: 100%;
     height: 389px;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 
 .card-a-title {
@@ -308,4 +367,198 @@ h5 {
     padding-left: 0;
     gap: 10px;
     font-size: 16px;
+}
+
+/* Media queries Tablette */
+
+@media screen and (max-width: 992px) {
+    .main-part {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .hébergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+    .cards-p {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .card-p {
+        width: auto;
+        height: 144px;
+    }
+
+    .card-p-image {
+        aspect-ratio: 1/1;
+    }
+
+    h1 {
+        width: 575px;
+    }
+
+    .card-a {
+        height: 267px;
+    }
+
+    .card-a-image {
+        height: 211px;
+    }
+
+    .card-a-title {
+        margin-top: 10px;
+    }
+}
+
+/* Media queries Mobile */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-list {
+        padding-left: 0px;
+    }
+
+    .header-link {
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 30px;
+    }
+
+    .header-link:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 30px;
+    }
+
+    .search-text {
+        display: none;
+    }
+
+    .search-icon {
+        display: inline-block;
+        color: white;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    h1 {
+        width: auto;
+        white-space: pre-wrap;
+        padding-bottom: 25px;
+    }
+
+    h5 {
+        margin-bottom: auto;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+        width: 25%;
+        height: 25%;
+    }
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-part {
+        flex-direction: column-reverse;
+    }
+
+    .filters-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 10px;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    button {
+        width: 160px;
+        white-space: nowrap;
+        text-align: left;
+        font-size: 11px;
+    }
+
+    .button-info {
+        width: max-content;
+    }
+
+    .footer-element {
+        display: block;
+        width: max-content;
+    }
+
+    .cards-p {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .card-p-text {
+        padding-top: 16px;
+    }
+
+    .card-p-stars {
+        padding-top: 50px;
+    }
+
+    .populaires {
+        width: max-content;
+    }
+
+    .hébergements {
+        width: max-content;
+        background-color: white;
+        padding: 0px;
+    }
+
+    .activités {
+        width: max-content;
+    }
+
+    .cards-h {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .cards-a {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .card-a-title {
+        margin-top: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-left: 20px;
+        
+    }
+
+    .footer-link {
+        padding-bottom: 0px;
+    }
+
+    .variable {
+        display: none;
+    }
+
 }
