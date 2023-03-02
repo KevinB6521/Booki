@@ -13,6 +13,7 @@ header {
 nav {
    display: flex;
    justify-content: space-between;
+   align-items: baseline;
 }
 
 ul {
@@ -24,10 +25,6 @@ ul {
 .logo {
     width: 61.09px;
     height: 19px;
-}
-
-.header-list {
-    margin-top: -30px;
 }
 
 .header-link {
@@ -434,7 +431,6 @@ h5 {
     }
 
     .logo {
-        margin-bottom: 30px;
         width: 25%;
         height: 25%;
     }
@@ -452,6 +448,11 @@ h5 {
         padding-left: 0px;
         text-align: center;
         gap: 0px;
+    }
+
+    .header-li {
+        display: flex;
+        flex: 50% 1 1;
     }
 
     .header-link {
@@ -509,6 +510,10 @@ h5 {
     .search-icon {
         display: inline-block;
         color: white;
+    }
+
+    .button-info {
+        width: max-content;
     }
 
     .main-part {
