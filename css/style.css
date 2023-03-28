@@ -502,6 +502,10 @@ h5 {
         font-size: 0.9em;
     }
 
+    .filter-button {
+        min-width: 190px;
+    }
+
     label {
         width: 10%;
     }
